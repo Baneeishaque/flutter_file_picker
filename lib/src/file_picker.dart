@@ -18,6 +18,7 @@ enum FileType {
   video,
   audio,
   custom,
+  camera,
 }
 
 enum FilePickerStatus {
