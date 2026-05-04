@@ -1,0 +1,461 @@
+# Instincts generated from https://github.com/Baneeishaque/flutter_file_picker
+# Generated: 2026-05-04T10:51:54.720Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: flutter_file_picker-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/Baneeishaque/flutter_file_picker
+---
+
+# Flutter_file_picker Commit Length
+
+## Action
+
+Write moderate-length commit messages (~64 characters)
+
+## Evidence
+
+- Average commit message length: 64 chars
+- Based on 21 commits
+
+---
+id: flutter_file_picker-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/Baneeishaque/flutter_file_picker
+---
+
+# Flutter_file_picker Naming Files
+
+## Action
+
+Use snake_case naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: snake_case
+
+---
+id: flutter_file_picker-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/Baneeishaque/flutter_file_picker
+---
+
+# Flutter_file_picker Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: flutter_file_picker-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/Baneeishaque/flutter_file_picker
+---
+
+# Flutter_file_picker Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: flutter_file_picker-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/Baneeishaque/flutter_file_picker
+---
+
+# Flutter_file_picker Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: flutter_file_picker-test-naming
+trigger: "when creating a test file"
+confidence: 0.85
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/Baneeishaque/flutter_file_picker
+---
+
+# Flutter_file_picker Test Naming
+
+## Action
+
+Name test files using the pattern: *.test.ts
+
+## Evidence
+
+- File pattern: *.test.ts
+- Consistent across test files
+
+---
+id: flutter_file_picker-workflow-version-bump-and-changelog-update
+trigger: "when doing version bump and changelog update"
+confidence: 0.65
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/Baneeishaque/flutter_file_picker
+---
+
+# Flutter_file_picker Workflow Version Bump And Changelog Update
+
+## Action
+
+Follow the version-bump-and-changelog-update workflow:
+1. Update the version number in pubspec.yaml
+2. Update CHANGELOG.md with relevant changes
+3. Sometimes update example/pubspec.yaml if needed
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~3x per month
+- Files: pubspec.yaml, CHANGELOG.md, example/pubspec.yaml
+
+---
+id: flutter_file_picker-workflow-code-formatting-and-style-consistency
+trigger: "when doing code formatting and style consistency"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/Baneeishaque/flutter_file_picker
+---
+
+# Flutter_file_picker Workflow Code Formatting And Style Consistency
+
+## Action
+
+Follow the code-formatting-and-style-consistency workflow:
+1. Run code formatter (e.g., dart format .)
+2. Apply consistent indentation and style across multiple files
+3. Commit all affected files
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: lib/src/**/*.dart, test/**/*.dart, example/lib/src/**/*.dart
+
+---
+id: flutter_file_picker-workflow-dependency-update
+trigger: "when doing dependency update"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/Baneeishaque/flutter_file_picker
+---
+
+# Flutter_file_picker Workflow Dependency Update
+
+## Action
+
+Follow the dependency-update workflow:
+1. Update the dependency version in pubspec.yaml
+2. Update related platform implementation files if necessary
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: pubspec.yaml, lib/src/platform/windows/file_picker_windows.dart
+
+---
+id: flutter_file_picker-workflow-merge-master-into-feature-branch
+trigger: "when doing merge master into feature branch"
+confidence: 0.65
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/Baneeishaque/flutter_file_picker
+---
+
+# Flutter_file_picker Workflow Merge Master Into Feature Branch
+
+## Action
+
+Follow the merge-master-into-feature-branch workflow:
+1. Merge master into the feature branch
+2. Resolve conflicts if any
+3. Update affected files across various platforms and configuration files
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~3x per month
+- Files: .github/workflows/main.yml, CHANGELOG.md, pubspec.yaml
+
+---
+id: flutter_file_picker-instinct-naming-conventions
+trigger: "When adding or renaming files, functions, classes, or constants in the codebase"
+confidence: 0.85
+domain: code-style
+source: repo-analysis
+source_repo: Baneeishaque/flutter_file_picker
+---
+
+# Flutter_file_picker Instinct Naming Conventions
+
+## Action
+
+Use snake_case for files, camelCase for functions, PascalCase for classes, and SCREAMING_SNAKE_CASE for constants
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions
+- Consistent naming seen in lib/src/ and platform implementation files
+
+---
+id: flutter_file_picker-instinct-import-style
+trigger: "When importing modules within the codebase"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Baneeishaque/flutter_file_picker
+---
+
+# Flutter_file_picker Instinct Import Style
+
+## Action
+
+Use relative imports for internal files
+
+## Evidence
+
+- Pattern in codeStyle.importStyle
+- Relative imports seen in lib/src/**/*.dart
+
+---
+id: flutter_file_picker-instinct-export-style
+trigger: "When exporting symbols from a module"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Baneeishaque/flutter_file_picker
+---
+
+# Flutter_file_picker Instinct Export Style
+
+## Action
+
+Use named exports rather than exporting the whole module
+
+## Evidence
+
+- Pattern in codeStyle.exportStyle
+- Named exports seen in lib/src/**/*.dart
+
+---
+id: flutter_file_picker-instinct-test-location
+trigger: "When adding new tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: Baneeishaque/flutter_file_picker
+---
+
+# Flutter_file_picker Instinct Test Location
+
+## Action
+
+Place test files in the separate test/ directory, mirroring the structure of lib/
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation
+- Test files located in test/ directory
+
+---
+id: flutter_file_picker-instinct-test-type
+trigger: "When writing tests for new or existing code"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: Baneeishaque/flutter_file_picker
+---
+
+# Flutter_file_picker Instinct Test Type
+
+## Action
+
+Write unit tests using the project's chosen framework (likely Dart test), following the *.test.ts pattern if applicable
+
+## Evidence
+
+- Pattern in testing.filePattern
+- Unit tests found in test/ directory
+
+---
+id: flutter_file_picker-instinct-git-commit-prefix
+trigger: "When making a commit for chores, style changes, or dependency updates"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: Baneeishaque/flutter_file_picker
+---
+
+# Flutter_file_picker Instinct Git Commit Prefix
+
+## Action
+
+Prefix the commit message with chore: or style: as appropriate
+
+## Evidence
+
+- Seen in commits: 'chore(windows): migrate win32 to 6.0.0', 'style: apply consistent code formatting...'
+- Pattern in commits.prefixes
+
+---
+id: flutter_file_picker-instinct-git-commit-length
+trigger: "When writing a commit message"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: Baneeishaque/flutter_file_picker
+---
+
+# Flutter_file_picker Instinct Git Commit Length
+
+## Action
+
+Keep the commit message concise, around 64 characters on average
+
+## Evidence
+
+- Pattern in commits.averageLength
+- Examples in commit history
+
+---
+id: flutter_file_picker-instinct-git-merge-master
+trigger: "When merging master into a feature or chore branch"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: Baneeishaque/flutter_file_picker
+---
+
+# Flutter_file_picker Instinct Git Merge Master
+
+## Action
+
+Use a commit message starting with 'Merge branch 'master' into ...'
+
+## Evidence
+
+- Seen in commit: 'Merge branch 'master' into chore/win32-6-migration-1980'
+- Pattern in commits.examples
+
+---
+id: flutter_file_picker-instinct-version-bump-changelog
+trigger: "When releasing a new version or pre-release of the package"
+confidence: 0.95
+domain: workflow
+source: repo-analysis
+source_repo: Baneeishaque/flutter_file_picker
+---
+
+# Flutter_file_picker Instinct Version Bump Changelog
+
+## Action
+
+Update pubspec.yaml version, update CHANGELOG.md, and update example/pubspec.yaml if needed
+
+## Evidence
+
+- Workflow: version-bump-and-changelog-update
+- Seen in commits: 'chore: update version to 11.1.0 and add changelog...'
+
+---
+id: flutter_file_picker-instinct-code-formatting
+trigger: "When ensuring codebase formatting or after major merges"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: Baneeishaque/flutter_file_picker
+---
+
+# Flutter_file_picker Instinct Code Formatting
+
+## Action
+
+Run code formatter (e.g., dart format .) and commit all affected files
+
+## Evidence
+
+- Workflow: code-formatting-and-style-consistency
+- Seen in commits: 'style: apply consistent code formatting...'
+
+---
+id: flutter_file_picker-instinct-dependency-update
+trigger: "When upgrading a dependency (e.g., win32) to a newer version"
+confidence: 0.85
+domain: workflow
+source: repo-analysis
+source_repo: Baneeishaque/flutter_file_picker
+---
+
+# Flutter_file_picker Instinct Dependency Update
+
+## Action
+
+Update dependency version in pubspec.yaml and related platform files if necessary
+
+## Evidence
+
+- Workflow: dependency-update
+- Seen in commits: 'chore(windows): migrate win32 to 6.0.0', 'chore: update win32 dependency to version 6.0.1'
+
+---
+id: flutter_file_picker-instinct-merge-master-workflow
+trigger: "When synchronizing a long-lived feature or chore branch with master"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: Baneeishaque/flutter_file_picker
+---
+
+# Flutter_file_picker Instinct Merge Master Workflow
+
+## Action
+
+Merge master into the branch, resolve conflicts, and update affected files across platforms and configs
+
+## Evidence
+
+- Workflow: merge-master-into-feature-branch
+- Seen in commits: 'Merge branch 'master' into chore/win32-6-migration-1980'
+
