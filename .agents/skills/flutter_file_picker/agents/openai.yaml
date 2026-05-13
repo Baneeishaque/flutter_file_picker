@@ -1,0 +1,6 @@
+interface:
+  display_name: "Flutter File Picker"
+  short_description: "Repo-specific patterns and workflows for flutter_file_picker"
+  default_prompt: "Use the flutter_file_picker repo skill to follow existing architecture, testing, and workflow conventions."
+policy:
+  allow_implicit_invocation: true
